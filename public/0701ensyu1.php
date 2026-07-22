@@ -22,7 +22,7 @@ $select_sth->execute();
 ?>
 
 <head>
-  <title>画像投稿できる掲示板</title>
+  <title>掲示板</title>
 </head>
 <!-- フォームのPOST先はこのファイル自身にする -->
 <form method="POST" action="./0701ensyu1.php">
