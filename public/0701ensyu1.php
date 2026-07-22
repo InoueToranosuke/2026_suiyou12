@@ -21,6 +21,9 @@ $select_sth = $dbh->prepare('SELECT * FROM hogehoge ORDER BY created_at DESC lim
 $select_sth->execute();
 ?>
 
+<head>
+  <title>画像投稿できる掲示板</title>
+</head>
 <!-- フォームのPOST先はこのファイル自身にする -->
 <form method="POST" action="./0701ensyu1.php">
   <textarea name="body"></textarea>
