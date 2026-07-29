@@ -55,38 +55,6 @@ CREATE文を使用してテーブルを作成します。
 ```bash
 CREATE TABLE 'テーブル名'(・・・);
 ```
-```bash
-show tables
-```
-+----------------------+
-| Tables_in_example_db |
-+----------------------+
-| access_logs          |
-| bbs_entries          |
-| hogehoge             |
-+----------------------+
-```bash
-DESCRIBE access_logs;
-```
-+------------+-------------+------+-----+-------------------+-------------------+
-| Field      | Type        | Null | Key | Default           | Extra             |
-+------------+-------------+------+-----+-------------------+-------------------+
-| id         | int         | NO   | PRI | NULL              | auto_increment    |
-| user_agent | text        | YES  |     | NULL              |                   |
-| remote_ip  | varchar(45) | NO   |     | NULL              |                   |
-| created_at | datetime    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
-+------------+-------------+------+-----+-------------------+-------------------+
-```bash
-DESCRIBE bbs_entries;
-```
-+----------------+--------------+------+-----+-------------------+-------------------+
-| Field          | Type         | Null | Key | Default           | Extra             |
-+----------------+--------------+------+-----+-------------------+-------------------+
-| id             | int unsigned | NO   | PRI | NULL              | auto_increment    |
-| body           | text         | NO   |     | NULL              |                   |
-| created_at     | datetime     | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
-| image_filename | text         | YES  |     | NULL              |                   |
-+----------------+--------------+------+-----+-------------------+-------------------+
 
 ### 8.プログラム作成
 拡張子'.php'のファイルを作成し、プログラムを書きます。
