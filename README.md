@@ -51,7 +51,9 @@ docker compose exec mysql mysql データベース名
 ### 8.テーブルを作成
 CREATE文を使用してテーブルを作成します。
 ```bash
-CREATE TABLE 'テーブル名'(・・・);
+CREATE TABLE 'テーブル名'(
+    カラム名 データ型
+);
 ```
 
 ### 9.Webページを表示
