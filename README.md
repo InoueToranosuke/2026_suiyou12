@@ -8,14 +8,10 @@
 
 EC2インスタンスを起動し、SSHで接続します。
 
-```bash
-ssh ec2-user@パブリックIPアドレス -i キーファイルのパス
-```
-
 ### 2. GitHubからプロジェクトを取得
 
 ```bash
-git clone リポジトリのURL
+git clone git@github.com:InoueToranosuke/2026_suiyou12.git
 ```
 
 ### 3. プロジェクトのディレクトリに移動
