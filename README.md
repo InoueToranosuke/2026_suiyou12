@@ -21,7 +21,19 @@ cd プロジェクトのディレクトリ名
 screen
 ```
 
-### 4.Dockerコンテナを起動
+### 4.build
+Dockerfileやcompose.ymlを編集した際にbuildを行います
+```bash
+vim Dockerfile
+```
+```bash
+vim compose.yml
+```
+```bash
+docker build
+```
+
+### 5.Dockerコンテナを起動
 プロジェクト内の作業用ディレクトリで以下のコードを実行します。
 ```bash
 docker compose up
@@ -32,25 +44,25 @@ docker compose up
 docker compose ps
 ```
 
-### 5.MySQLに接続
+### 6.MySQLに接続
 MySQLに接続します。
 ```bash
 docker compose exec mysql mysql データベース名
 ```
 
-### 6.テーブルを作成
+### 7.テーブルを作成
 CREATE文を使用してテーブルを作成します。
 ```bash
 CREATE TABLE 'テーブル名'(・・・);
 ```
 
-### 7.プログラム作成
+### 8.プログラム作成
 拡張子'.php'のファイルを作成し、プログラムを書きます。
 ```bash
 vim ファイル名.php
 ```
 
-### 8.Webページを表示
+### 9.Webページを表示
 ブラウザを起動し、以下のURLにアクセスします。
 ```text
 http://EC2インスタンスのパブリックIPアドレス/ファイル名
